@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="overlay" id="overlay">
+        <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+        <section class="top">
+
+            <header>
+                <a href="#">
+                    yummy.eats
+                </a>
+            </header>
+
+            <h1><span>The Healthy</span> Eating Experience</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam optio, cumque culpa voluptas reiciendis ex
+                labore suscipit facilis iusto eum!</p>
+
+            <div class="form-container">
+                <form action="">
+
+                    <div class="form-left">
+                        <label for="city">Enter your city:</label>
+                        <input type="text" name="city" id="city">
+                        <p>Example: "San Diego"</p>
+                    </div>
+
+                    <input type="button" value="Find Food Now">
+                </form>
+            </div>
+
+        </section>
+
+    </div>
+
+    <section class="authentic">
+        <div class="right-col">
+            <h2>Authentic. Awesome</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut eos veritatis expedita accusamus molestias,
+                aliquid voluptas sint delectus. Tempora eum nobis reiciendis dignissimos maiores atque dicta soluta
+                aliquid quos? Atque animi, nostrum mollitia ut nemo ex maxime minima deserunt aperiam veritatis
+                voluptates laboriosam vitae eaque architecto odit. Optio, sit accusantium!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi fugit animi ipsum sunt corporis dolorum
+                autem distinctio fuga pariatur? Culpa, odit quae nihil magni illum atque natus nemo doloremque officiis
+                et, ullam nesciunt obcaecati at ea soluta saepe nostrum dolorem totam. Sequi sit deserunt labore
+                quisquam laborum facilis, id est!</p>
+        </div>
+        <img src="images/bowl.jpg" alt="Picture of Food">
+    </section>
+
+    <script>
+        let btn = document.getElementById('cta-btn');
+        let overlay = document.getElementById('overlay');
+
+        btn.addEventListener('click', () => {
+            overlay.style.display = 'grid';
+            overlay.classList.add('animate-overlay')
+        })
+    </script>
+</body>
+
+</html>
